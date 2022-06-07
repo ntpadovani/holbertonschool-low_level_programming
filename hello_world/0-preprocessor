@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#A script that runs a C file through the preprocessor and saves the result into another file
+export CFILE=main.c
+gcc main.c -E -o c
