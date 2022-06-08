@@ -18,15 +18,15 @@ int main(void)
 		ldigt = n % 10;
 		if (ldigt > 5)
 		{
-			printf(" %d and is greater than 5", ldigt);
+			printf(" %d and is greater than 5\n", ldigt);
 		}
 		else if (ldigt == 0)
 		{
-			printf(" %d and is 0", ldigt);
+			printf(" %d and is 0\n", ldigt);
 		}
 		else if ((ldigt < 6) && (ldigt != 0))
 		{
-			printf(" %d and is less than 6 and not 0", ldigt);
+			printf(" %d and is less than 6 and not 0\n", ldigt);
 		}
 		else
 
