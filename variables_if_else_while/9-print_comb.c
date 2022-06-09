@@ -18,7 +18,7 @@ int number;
 		putchar(',');
 		putchar(' ');
 	}
-	nocomma:
+nocomma:
 	putchar('\n');
 	return (0);
 }
