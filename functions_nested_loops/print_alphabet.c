@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 char alfabeto;
 	for (alfabeto = 'a'; alfabeto <= 'z'; alfabeto++)
@@ -12,5 +12,4 @@ char alfabeto;
 		_putchar(alfabeto);
 	}
 		_putchar('\n');
-return (0);
 }
