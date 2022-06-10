@@ -1,12 +1,12 @@
 #include"main.h"
 /**
- * _islower - Entry point
- * @c: Argument
- * Return: (1) is good
+ * _islower - check if ltr is lowecase
+ * @c: letter to be checked
+ * Return: 1 for lower or 0 for upper
  */
 int _islower(int c)
 {
-	if ((c >= 'a') || (c <= 'z'))
+	if ((c >= 'a') && (c <= 'z'))
 	{
 		return (1);
 	}
