@@ -8,15 +8,14 @@
 void print_numbers(void)
 {
 	char nums;
-	int count = 0;
-
-	while (count <= 9)
-	{
+	/*int count =1;*/
+	/*while (count <= 9)*/
+	/*{*/
 		for (nums = '0'; nums <= '9'; nums++)
 		{
 			_putchar(nums);
 		}
 		_putchar('\n');
-		count++;
-	}
+	/*	count++;*/
+	/*}*/
 }
