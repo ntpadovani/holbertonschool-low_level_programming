@@ -17,4 +17,5 @@
 *void print_to_98(int n)i;
 */
 int _isupper(int c);
+int _isdigit(int c);
 /*#endif*/
