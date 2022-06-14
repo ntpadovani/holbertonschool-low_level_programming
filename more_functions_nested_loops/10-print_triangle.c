@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_triangle-Draws a triangle in the terminal
+ *print_triangle -Draws a triangle in the terminal
  *@size: The size of the triangle to be printed
  * Return: Void
  */
