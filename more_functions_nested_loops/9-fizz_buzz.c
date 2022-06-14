@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *Entry point -Displays FiZZ, Buzz and FizzBuzz for a given
+ *main -Displays FiZZ, Buzz and FizzBuzz for a given
  *situation.
  * Return: Void
  */
