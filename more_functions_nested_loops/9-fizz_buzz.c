@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *Entry point -Displays FiZZ, Buzz and FizzBuzz for a given 
- *		situation.
+ *Entry point -Displays FiZZ, Buzz and FizzBuzz for a given
+ *situation.
  * Return: Void
  */
 int main(void)
@@ -21,7 +21,7 @@ int fizzy = 1;
 		}
 		else if (fizzy % 5 == 0)
 		{
-			if(fizzy == 100)
+			if (fizzy == 100)
 			{
 				printf("Buzz");
 			}
