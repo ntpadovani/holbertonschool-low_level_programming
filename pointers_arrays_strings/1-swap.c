@@ -12,6 +12,5 @@ void swap_int(int *a, int *b)
 int swap;
 swap = *b;
 *b = *a;
-printf("swap is %d\n", swap);
 *a = swap;
 }
