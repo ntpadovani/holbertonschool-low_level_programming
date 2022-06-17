@@ -30,7 +30,7 @@ void rev_string(char *s)
 	int swap2 = (_strlen(s) - 1);
 	char tmp;
 
-	while (i < j)
+	while (swap1 < swap2)
 	{
 		tmp = s[swap1];
 		s[swap1] = s[swap2];
