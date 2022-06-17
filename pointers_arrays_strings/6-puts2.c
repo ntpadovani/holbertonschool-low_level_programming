@@ -41,4 +41,4 @@ every = _strlen(str);
 		}
 	}
 	_putchar('\n');
-}	
+}
