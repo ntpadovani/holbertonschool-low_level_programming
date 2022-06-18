@@ -14,11 +14,11 @@ int idx;
 	{
 		if (idx == (n - 1))
 		{
-			printf("%d", a[n]);
+			printf("%d", a[idx]);
 		}
 		else
-		{	
-			printf("%d", a[n]);
+		{
+			printf("%d", a[idx]);
 			printf(",");
 			printf(" ");
 		}
