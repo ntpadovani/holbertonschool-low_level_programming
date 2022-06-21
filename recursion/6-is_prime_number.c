@@ -9,16 +9,12 @@
 
 int is_prime_number(int n)
 {
-	if (n < 0)
+	if ((is_prime_number(6 * (n + 1))))
 	{
-		return (-1);
-	}
-	else if (n == 0)
-	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (is_prime_number(6 * (n + 1)));
+		return (0);
 	}
 }
