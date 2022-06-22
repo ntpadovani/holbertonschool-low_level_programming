@@ -26,9 +26,7 @@ int _strlen(char *s)
 
 void puts2(char *str)
 {
-int every;
-every = _strlen(str);
-
+	int every;
 	for (every = 0; str[every] != '\0'; every++)
 	{
 		if (every % 2 == 0)
@@ -36,10 +34,10 @@ every = _strlen(str);
 			_putchar(str[every]);
 			every++;
 		}
-		else
+	/*	else
 		{
-			every++;
-		}
+		every++;
+ 		}*/
 	}
 	_putchar('\n');
 }
