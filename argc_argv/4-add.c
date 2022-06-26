@@ -22,9 +22,9 @@ else
 {
 	for (idx = 1; idx < argc; idx++)
 	{
-		var = argv[idx];	
+		var = argv[idx];
 		if (!isdigit(*var))
-		{	
+		{
 			printf("Error\n");
 			return (1);
 		}

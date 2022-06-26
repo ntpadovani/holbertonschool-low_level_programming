@@ -4,7 +4,7 @@
 *main -A program that will calculate how much
 *change to give back based on a specific amount
 *of money given.
-*using coins of values 25, 10, 5, 2 and 1 cents.
+*Using coins of values 25, 10, 5, 2 and 1 cents.
 *@argc: The counter for the argv string array
 *@argv: The array
 *Return: How many coins of each value are needed.
