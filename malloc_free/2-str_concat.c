@@ -12,7 +12,7 @@ char *str_concat(char *s1, char *s2)
 int lenght = (strlen(s1) + strlen(s2) + 1), idx, idx2;
 char *stemp;
 
-printf("Size of lenght: %d\n", lenght);
+/*printf("Size of lenght: %d\n", lenght);*/
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -22,7 +22,7 @@ printf("Size of lenght: %d\n", lenght);
 		s2 = "";
 	}
 	stemp = malloc((sizeof(char) * lenght) + 1);
-printf("Contents of stemp right now: %s\n", stemp);
+/*printf("Contents of stemp right now: %s\n", stemp);*/
 	if (stemp == NULL)
 	{
 		/*free(stemp);*/
@@ -32,8 +32,8 @@ printf("Contents of stemp right now: %s\n", stemp);
 	{
 		stemp[idx] = s1[idx];
 	}
-printf("Contents of stemp right now: %s\n", stemp);
-printf("Contents of idx: %d\n", idx);
+/*printf("Contents of stemp right now: %s\n", stemp);
+printf("Contents of idx: %d\n", idx);*/
 	for (idx2 = 0; idx < *stemp; idx++)
 	{
 		stemp[idx] = s2[idx2];
