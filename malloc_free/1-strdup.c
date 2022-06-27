@@ -4,7 +4,7 @@
 *_strdup -A function that returns a pointer to
 *a newly allocated space in memory, which contains
 *a copy of the string given as a parameter.
-*@str: A string pointer of type char.
+*@str: A string pointer of type char .
 *Return: A pointer to an allocated space in memory.
 */
 
