@@ -9,10 +9,9 @@
 
 char *str_concat(char *s1, char *s2)
 {
-int lenght = (strlen(s1) + strlen(s2) + 1), idx, idx2;
-char *stemp;
+	int length = strlen(s1) + strlen(s2), idx, idx2;
+	char *stemp, *s3;
 
-/*printf("Size of lenght: %d\n", lenght);*/
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -21,23 +20,26 @@ char *stemp;
 	{
 		s2 = "";
 	}
-	stemp = malloc((sizeof(char) * lenght) + 1);
-/*printf("Contents of stemp right now: %s\n", stemp);*/
-	if (stemp == NULL)
+	stemp = malloc((sizeof(char) * (length + 1)));
+
+	if (stemp != NULL)
 	{
-		/*free(stemp);*/
+		s3 = stemp;
+	}
+	else
+	{
+		free(stemp);
 		return (NULL);
 	}
+
 	for (idx = 0; s1[idx] != '\0'; idx++)
 	{
-		stemp[idx] = s1[idx];
+		s3[idx] = s1[idx];
 	}
-/*printf("Contents of stemp right now: %s\n", stemp);
-printf("Contents of idx: %d\n", idx);*/
-	for (idx2 = 0; idx < *stemp; idx++)
+	for (idx2 = 0; s2[idx2] != '\0'; idx2++, idx++)
 	{
-		stemp[idx] = s2[idx2];
-		idx2++;
+		s3[idx] = s2[idx2];
 	}
-	return (stemp);
+	s3[idx] = '\0';
+	return (s3);
 }
