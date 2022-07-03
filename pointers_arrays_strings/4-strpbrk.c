@@ -20,7 +20,7 @@ int idx, idx2;
 		{
 			if (s[idx] == accept[idx2])
 			{
-				return (&(s[idx])); 
+				return (&(s[idx]));
 			}
 		}
 	}
