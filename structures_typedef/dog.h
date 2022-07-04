@@ -1,7 +1,8 @@
 #ifndef _DOG_
 #define _DOG_
 
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
 * struct dog - A struc called dog
@@ -12,11 +13,14 @@
 * Description: A struct used to specify a dog's name,
 *              age and owner's name.
 */
-
 struct dog
 {
 char *name;
 float age;
 char *owner;
 };
+
+/*Below from this line are the prototypes*/
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
