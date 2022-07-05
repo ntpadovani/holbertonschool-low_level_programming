@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+
 /**
 * struct dog - A struc called dog
 *
