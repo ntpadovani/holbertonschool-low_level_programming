@@ -39,7 +39,7 @@ int _strlen(char *s)
 
 	return (lenght);
 }
-	
+
 /**
 * new_dog - A funtion to create a new struct dog.
 *
