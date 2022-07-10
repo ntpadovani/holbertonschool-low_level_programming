@@ -23,5 +23,6 @@ va_start(numbers, n);
 			printf("%s", separator);
 		}
 	}
+va_end(numbers);
 printf("\n");
 }
