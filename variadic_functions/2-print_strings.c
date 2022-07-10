@@ -21,9 +21,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		store = va_arg(strings, char *);
 		if (store == NULL)
-        	{
-                	printf("(nil)");
-        	}
+		{
+			printf("(nil)");
+		}
 		else
 		{
 			printf("%s", store);
