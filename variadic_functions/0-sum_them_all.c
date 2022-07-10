@@ -22,7 +22,7 @@ va_start(ap, n);
 
 	for (idx = 0; idx < n; idx++)
 	{
-		total += va_arg(ap, const unsigned int);
+		total += va_arg(ap, int);
 	}
 va_end(ap);
 return (total);
