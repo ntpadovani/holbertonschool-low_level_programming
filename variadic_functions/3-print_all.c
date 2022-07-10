@@ -1,64 +1,6 @@
 #include "variadic_functions.h"
 
 /**
-* print_char - A function that prints a char.
-* @ptr:  Contains the values.
-* Return:  Void
-*/
-
-void print_char(va_list ptr)
-{
-	char storage;
-
-	storage = va_arg(ptr, int);
-	printf("%c", storage);
-}
-
-/**
-* print_int - A function that prints an integer.
-* @ptr:  Contains the values.
-* Return:  Void
-*/
-void print_int(va_list ptr)
-{
-	int storage;
-
-	storage = va_arg(ptr, int);
-	printf("%d", storage);
-}
-
-/**
-* print_float - A function that prints a decimal.
-* @ptr:  Contains the values.
-* Return:  Void
-*/
-void print_float(va_list ptr)
-{
-	double storage;
-
-	storage = va_arg(ptr, double);
-	printf("%f", storage);
-}
-
-/**
-* print_string - A function that prints a string array.
-* @ptr:  Contains the values.
-* Return:  Void
-*/
-void print_string(va_list ptr)
-{
-	char *storage;
-
-	storage = va_arg(ptr, char *);
-	if (storage == NULL)
-	{
-		printf("(nil)");
-		return;
-	}
-	printf("%s", storage);
-}
-
-/**
 * print_all - A function that prints anything.
 *
 * @format:  Contains the list.
