@@ -10,12 +10,10 @@ void print_string(va_list ptr)
 	char *storage;
 
 	storage = va_arg(ptr, char *);
-	if (storage == NULL)
 	{
-		printf("(nil)");
+		printf("%s", (storage == NULL) ? "(nil)" : storage);
 		return;
 	}
-	printf("%s", storage);
 }
 
 
