@@ -81,7 +81,7 @@ void print_all(const char * const format, ...)
 	va_start(ptr, format);
 
 
-	while (format[idx] != '\0')
+	while (format && format[idx] != '\0')
 	{
 		idx2 = 0;
 		while (idx2 < 4)
