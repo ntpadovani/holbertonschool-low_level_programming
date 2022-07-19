@@ -6,11 +6,8 @@
  */
 int main(void)
 {
-char alfabeto;
-	for (alfabeto = 'z'; alfabeto >= 'a'; alfabeto--)
-	{
-		putchar(alfabeto);
-	}
-		putchar('\n');
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+
 	return (0);
 }
+
