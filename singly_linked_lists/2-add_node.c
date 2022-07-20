@@ -1,66 +1,66 @@
 #include"lists.h"
 
-#include "lists.h"
-
 /**
  * _strlen -  function that returns the length of a string
  * @s: ...
  * Return: returns the length of a string
  */
 
-int _strlen(const char *s) 
+int _strlen(const char *s)
 {
-        int idx = 0;
+	int idx = 0;
 
-        while (*s != '\0')
-        {
-                idx++;
-                s++;
-        }
-        return (idx);
+	while (*s != '\0')
+	{
+		idx++;
+		s++;
+	}
+	return (idx);
 }
 
 
 /**
-* add_node - A function that adds a new node
-* at the beggining of a list.
-*
-* @head: Pointer to the first node.
-* @str: Pointer the fisrt element of a node.
-*
-* Return:  the address of the new element,
-* or NULL if it failed.
-*/
+ * add_node - A function that adds a new node
+ * at the beggining of a list.
+ *
+ * @head: Pointer to the first node.
+ * @str: Pointer the fisrt element of a node.
+ *
+ * Return:  the address of the new element,
+ * or NULL if it failed.
+ */
 
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *newheadnode = malloc(sizeof(list_t));/*new blank node*/
+	list_t *newheadnode = malloc(sizeof(list_t));/*new blank node*/
 
 	/*Checking the new node pointer for contents:validating*/
 	if (newheadnode == NULL || str == NULL)
 	{
+		free(newheadnode);
 		return (NULL);
 	}
 
 	/*
-	*Asigning the new node pointer at the str
-	*section a value.
-	*/
+	 *Asigning the new node pointer at the str
+	 *section a value.
+	 */
 	(*newheadnode).str = strdup(str);
 
 	/*
-	*Checking the new node pointer at the str
-	*section for contents:validating.
-	*/
+	 *Checking the new node pointer at the str
+	 *section for contents:validating.
+	 */
 	if ((*newheadnode).str == NULL)
 	{
+		free(newheadnode);
 		return (NULL);
 	}
 
 	/*
-	*Asigning the new node pointer at the len
-	*section a value.
-	*/
+	 *Asigning the new node pointer at the len
+	 *section a value.
+	 */
 	(*newheadnode).len = _strlen((*newheadnode).str);
 	(*newheadnode).next = *head;/*Pointing the new node to head node*/
 
