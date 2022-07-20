@@ -40,7 +40,7 @@ list_t *newheadnode = malloc(sizeof(list_t));/*new blank node*/
 	*Asigning the new node pointer at the len
 	*section a value.
 	*/
-	(*newheadnode).len = _strlength((*newheadnode).str);
+	(*newheadnode).len = _strlen((*newheadnode).str);
 	(*newheadnode).next = *head;/*Pointing the new node to head node*/
 
 	*head = newheadnode;/*Pointing the head node to the new node.*/
