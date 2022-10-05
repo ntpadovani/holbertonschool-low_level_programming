@@ -1,2 +1,1 @@
-This will contain all files for the search algorithms project"
-
+This will contain all files for the search algorithm project
